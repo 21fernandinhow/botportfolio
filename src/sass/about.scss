@@ -1,0 +1,18 @@
+.skills{
+    display: inline-flex;
+    flex-wrap: wrap;
+    p{
+        font-size: 14px;
+        border-radius: 7px;
+        padding: 5px;
+        background-color: var(--primary-color);
+        font-weight: bolder;
+        color: var(--contrast-color);
+        margin-right: 2px;
+        margin-top: 0px;
+        &:hover{
+            background-color: var(--secondary-color);
+            transition: 0.2s;
+        }
+    }
+}

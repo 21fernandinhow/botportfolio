@@ -1,0 +1,101 @@
+//Imports
+@import './header.scss';
+@import './about.scss';
+@import './portfolio.scss';
+@import './contact.scss';
+
+//Theme
+:root{
+    --primary-color: #7868E6;
+    --secondary-color: #B8B5FF;
+    --contrast-color: #000015;
+    --bg-color: #EDEEF7;
+    --bg-radical-color: #ffffff;
+}
+//Extends
+.flex-central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//General Itens
+html {
+    scroll-behavior: smooth;
+} 
+body{
+    min-height: 100vh;
+    color: var(--contrast-color);
+    background-color: var(--bg-radical-color);
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-color) var(--primary-color);
+}
+body::-webkit-scrollbar {
+    width: 12px;               
+}
+body::-webkit-scrollbar-track {
+    background: var(--bg-color);        
+}  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);    
+    border-radius: 20px;      
+    border: 1px solid var(--bg-color); 
+}
+::selection{
+    background-color: var(--bg-color);
+    color: var(--contrast-color);
+}
+
+#message-box{
+    margin-top: 25vh;
+    .message{
+        z-index: 1;
+        background-color: var(--bg-color);
+        border-radius: 40px;
+        padding: 20px;
+        max-width: 70%;
+        margin: 1em;
+    }
+    .user{
+        margin-left: auto;
+        background-color: var(--secondary-color);
+    }
+}
+
+.menu-btn{
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--contrast-color);
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 30px;
+    margin: 3px;
+    &:hover{
+        background-color: var(--primary-color);
+        transition: 0.8s;
+    }
+}
+
+.subtitle{
+    margin-bottom: 2px;
+}
+
+//Responsivity
+@media (max-width: 720px){
+    #message-box{
+        margin-top: 30vh;
+        .portfolio{
+            .carrousel{
+                .portfolio-div{
+                    .portfolio-img{
+                        max-width: 105%;
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
