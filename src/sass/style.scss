@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid var(--bg-color); 
 }
 ::selection{
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     color: var(--contrast-color);
 }
 
