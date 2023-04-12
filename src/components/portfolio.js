@@ -6,6 +6,9 @@ function Portfolio() {
   let [project, setProject] = useState(0);
 
   const projects = [
+    {name: "Landing Page for ClassPlay startup",
+    image: "../images/classplay.webp",
+    link: "https://classplay.netlify.app/"},
     {name: "Website for Digital Marketing Agency that sends form to API",
     image: "../images/apo.webp",
     link: "https://agenciapresencaonline.com.br"},
@@ -17,13 +20,7 @@ function Portfolio() {
     link: "https://checkingtheweather.netlify.app/"},
     {name: "ReactJs MemoryGame made for Fernando's little sister-in-law",
     image: "../images/memorygame.webp",
-    link: "https://forestmemorygame.netlify.app/"},
-    {name: "Landing Page for ClassPlay startup founded by him",
-    image: "../images/classplay.webp",
-    link: "https://classplay.netlify.app/"},
-    {name: "Bonus: Days to World Cup (Fernando loves football)",
-    image: "../images/worldcup.webp",
-    link: "https://quantofaltapracopa.netlify.app/"},
+    link: "https://forestmemorygame.netlify.app/"}
   ]
 
   const nextProject = () => {

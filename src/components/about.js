@@ -12,6 +12,7 @@ function About (){
             <div className="skills">
                 <p>ReactJs</p>
                 <p>Javascript</p>
+                <p>Styled Components</p>
                 <p>SCSS/Sass</p>
                 <p>CSS</p>
                 <p>Bootstrap</p>
