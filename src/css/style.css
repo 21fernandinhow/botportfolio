@@ -18,14 +18,14 @@
   border-radius: 100%;
   background-color: var(--secondary-color);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  margin: 5px;
 }
 .header .avatar:hover {
-  width: 120px;
-  height: 120px;
-  transition: 0.6s;
+  border: 3px solid var(--bg-color);
+  margin: 2px;
 }
 .header .icons .icon {
-  margin-right: 5px;
+  margin: 3px;
   filter: invert(100%);
   border-radius: 10px;
   padding: 4px;

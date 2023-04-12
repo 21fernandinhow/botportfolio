@@ -119,31 +119,34 @@ function App() {
     publishMessage(order, newMessage);
   }
 
-  const [messages, setMessages] = useState([
-    {
-      who: 'bot',
-      content: 
-        <Fragment>
-          <h2> Hi! I'm not Fernando Carvalho.</h2>
-              <p> 🤖 My name is Charlie, a simple bot created by Fernando to guide you on his portfolio.</p>
-              <div className="menu">
-                  <button className='menu-btn' onClick={about}>About Fernando</button>
-                  <button className='menu-btn' onClick={bot}>Charlie? A Bot?</button>
-                  <button className='menu-btn' onClick={projects}>Projects</button>
-                  <button className='menu-btn' onClick={contact}>Contact</button>
-              </div>
-        </Fragment>,
-      key: 0
-    }
-  ]);
+  const [messages, setMessages] = useState([]);
 
   return (
     <div className="App">
       <Header/>
       <section id='message-box'>
+
+        {/*First message renders without the map, for a faster initial load*/}
+        <Message 
+        key={0}
+        who='bot' 
+        content={
+          <Fragment>
+            <h2> Hi! I'm not Fernando Carvalho.</h2>
+            <p> 🤖 My name is Charlie, a simple bot created by Fernando to guide you on his portfolio.</p>
+            <div className="menu">
+              <button className='menu-btn' onClick={about}>About Fernando</button>
+              <button className='menu-btn' onClick={bot}>Charlie? A Bot?</button>
+              <button className='menu-btn' onClick={projects}>Projects</button>
+              <button className='menu-btn' onClick={contact}>Contact</button>
+            </div>
+          </Fragment>
+        }/>
+        
         {messages.map(i => (
-          <Message key={i.key} who={i.who} content={i.content} extra={i.extra}/>
+          <Message key={i.key} who={i.who} content={i.content}/>
         ))}
+
       </section>
     </div>
   );
