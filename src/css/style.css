@@ -175,10 +175,10 @@
 }
 
 :root {
-  --primary-color: #7868E6;
-  --secondary-color: #B8B5FF;
-  --contrast-color: #000015;
-  --bg-color: #EDEEF7;
+  --primary-color: #7868e6;
+  --secondary-color: #b8b5ff;
+  --contrast-color: #121212;
+  --bg-color: #edeef7;
   --bg-radical-color: #ffffff;
 }
 
