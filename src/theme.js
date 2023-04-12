@@ -11,7 +11,7 @@ function changeTheme(){
         body.dataset.theme = "light"
       } else {
         root.style.setProperty("--bg-color", "#18122B")
-        root.style.setProperty("--bg-radical-color", "#000000")
+        root.style.setProperty("--bg-radical-color", "#000015")
         root.style.setProperty("--contrast-color", "#f5f5f5")
         root.style.setProperty("--primary-color", "#443C68");
         root.style.setProperty("--secondary-color", "#393053");
