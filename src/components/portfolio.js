@@ -21,7 +21,7 @@ function Portfolio() {
     {name: "ReactJs MemoryGame made for Fernando's little sister-in-law",
     image: "../images/memorygame.webp",
     link: "https://forestmemorygame.netlify.app/"},
-    {name: "Site that automatic counts how many days left to next world cup",
+    {name: "It automatic counts how many days left to next world cup",
     image: "../images/worldcup.webp",
     link: "https://quantofaltapracopa.netlify.app/"}
   ]
@@ -45,15 +45,15 @@ function Portfolio() {
   return (
     <div className="portfolio">
         <h2>Projects</h2>
-        <p>🤖 This are some of the projects my master made. He likes to create amazing user experiences with minimalist design</p>
+        <p>🤖 This are some of the projects my master made. You can click the image to open the project</p>
 
         <div className="carrousel">
-          <div className="arrow-div arrow1" onClick={lastProject}>
-            <span>{`<`}</span>
+          <div className="arrow-div arrow1">
+            <span onClick={lastProject}>{`<`}</span>
           </div>
           <Item name={projects[project].name} image={projects[project].image} link={projects[project].link} id={project+1} total={projects.length}/>
-          <div className="arrow-div arrow2" onClick={nextProject}>
-            <span>{`>`}</span>
+          <div className="arrow-div arrow2">
+            <span onClick={nextProject}>{`>`}</span>
           </div>
         </div>
 

@@ -5,12 +5,12 @@
     h3{
         margin:10px;
     }
-    min-height: 350px;
     .carrousel{
         display: flex;
         justify-content: stretch;
         align-items: center;
         flex-wrap: nowrap;
+        min-height: 35vh;
         .arrow-div{
             @extend .flex-central;
             margin-top: -1.7em;
