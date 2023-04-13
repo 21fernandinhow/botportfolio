@@ -1,6 +1,6 @@
 import React from "react";
 
-function Contact() {
+function Contact(props) {
   return (
     <div className="contact">
         <h2>Get in touch</h2>
@@ -17,6 +17,11 @@ function Contact() {
           <button type="submit" className="menu-btn">Send Message</button>
 
         </form>
+
+        <div className='menu'>
+          <button className='menu-btn' onClick={props.about}>About Fernando</button>
+          <button className='menu-btn' onClick={props.projects}>See Projects</button>
+        </div>
     </div>
   );
 };

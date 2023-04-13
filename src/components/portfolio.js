@@ -1,7 +1,7 @@
 import Item from "./portfolio-item.js";
 import { useState } from "react";
 
-function Portfolio() {
+function Portfolio(props) {
 
   let [project, setProject] = useState(0);
 
@@ -55,6 +55,11 @@ function Portfolio() {
           <div className="arrow-div arrow2">
             <span onClick={nextProject}>{`>`}</span>
           </div>
+        </div>
+
+        <div className="menu">
+          <button className='menu-btn' onClick={props.contact}>Get in touch</button>
+          <button className='menu-btn' onClick={props.about}>More about Fernando</button>
         </div>
 
     </div>
