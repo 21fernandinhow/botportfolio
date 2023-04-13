@@ -20,7 +20,10 @@ function Portfolio() {
     link: "https://checkingtheweather.netlify.app/"},
     {name: "ReactJs MemoryGame made for Fernando's little sister-in-law",
     image: "../images/memorygame.webp",
-    link: "https://forestmemorygame.netlify.app/"}
+    link: "https://forestmemorygame.netlify.app/"},
+    {name: "Site that automatic counts how many days left to next world cup",
+    image: "../images/worldcup.webp",
+    link: "https://quantofaltapracopa.netlify.app/"}
   ]
 
   const nextProject = () => {
