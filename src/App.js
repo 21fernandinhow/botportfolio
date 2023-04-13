@@ -24,14 +24,18 @@ function App() {
       content: <Fragment>
                 {answer}
               </Fragment>,
-      key: Math.random()*100+1,
+      key: Math.random()*1000+1,
     }
     messages.push(userMessage, botMessage);
     setMessages([...messages]);
-    window.scrollTo(0, document.body.scrollHeight);
+    
+    setTimeout(()=>{
+      const scrollPoint = document.querySelector('#scroll-bottom');
+      scrollPoint.scrollIntoView();
+    })
   }
 
-  
+  //Bot Messages
   const about = () => {
     publishMessage(
       'Ok Charlie, tell me more about your creator', 
@@ -76,6 +80,7 @@ function App() {
         ))}
 
       </section>
+      <span id="scroll-bottom"></span>
     </div>
   );
 }

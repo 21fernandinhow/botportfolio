@@ -4,25 +4,8 @@ import '../images/changetheme.webp';
 import '../images/avatar.webp';
 import '../images/github.webp';
 import '../images/linkedin.webp';
-import audioSong from "../mymusic.mp3";
 
 function Header() {
-
-    let playing = false;
-    const song = new Audio (audioSong);
-
-    const music = () => {
-        
-        song.pause();
-
-        if (playing) {
-            song.pause();
-        } else {
-            song.play();
-        }
-
-        playing=!playing;
-    };
 
     return (
         <header className='header'>
@@ -39,8 +22,6 @@ function Header() {
                 </a>
 
                 <img onClick={changeTheme} className='btn-theme' alt="change-theme" src="../images/changetheme.webp" width='90px' height='45px'/>
-
-                <button onClick={music} id="song-button">🎵</button>
 
             </div>
         </header>
