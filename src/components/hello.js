@@ -10,7 +10,7 @@ function Hello (props){
         content={
           <Fragment>
             <h2> Hi! I'm not Fernando Carvalho.</h2>
-            <p> 🤖 My name is Charlie, a simple bot created by Fernando to guide you on his portfolio.</p>
+            <p> 🤖 My name is Charlie, a simple bot created by Fernando to guide you on his portfolio. Talk with me using the buttons: </p>
             <div className="menu">
               <button className='menu-btn' onClick={props.about}>About Fernando</button>
               <button className='menu-btn' onClick={props.bot}>Charlie? A Bot?</button>
