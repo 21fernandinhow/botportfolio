@@ -1,0 +1,20 @@
+.jokenpo{
+    min-height: 260px;
+    .options{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        h4{
+            margin: 0px 10px 2px 0px;
+            padding: 7px;
+            background-color: var(--secondary-color);
+            border-radius: 100%;
+            cursor: pointer;
+            font-size: 20px;
+            &:hover{
+                background-color: var(--bg-radical-color);
+                transition: 0.4s;
+            }
+        }
+    }
+}

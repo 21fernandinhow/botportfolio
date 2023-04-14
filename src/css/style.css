@@ -167,6 +167,27 @@
   margin-bottom: 20px;
 }
 
+.jokenpo {
+  min-height: 260px;
+}
+.jokenpo .options {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.jokenpo .options h4 {
+  margin: 0px 10px 2px 0px;
+  padding: 7px;
+  background-color: var(--secondary-color);
+  border-radius: 100%;
+  cursor: pointer;
+  font-size: 20px;
+}
+.jokenpo .options h4:hover {
+  background-color: var(--bg-radical-color);
+  transition: 0.4s;
+}
+
 :root {
   --primary-color: #7868e6;
   --secondary-color: #b8b5ff;
@@ -260,6 +281,9 @@ body::-webkit-scrollbar-thumb {
   #message-box .portfolio .carrousel .portfolio-div .portfolio-img {
     max-width: 105%;
     margin-left: 0px;
+  }
+  #message-box .jokenpo {
+    min-height: 320px;
   }
 }
 

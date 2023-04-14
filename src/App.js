@@ -7,6 +7,7 @@ import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Charlie from './components/charlie';
 import Conscience from './components/conscience';
+import Jokenpo from './components/jokenpo';
 import './css/style.css';
 
 function App() {
@@ -45,7 +46,7 @@ function App() {
   const projects = () => {
     publishMessage(
       'Ok Charlie, show me the projects of Fernando', 
-      <Portfolio contact={contact} about={about}/>,
+      <Portfolio contact={contact} about={about} jokenpo={jokenpo}/>,
     )
   }
   const contact = () => {
@@ -64,6 +65,12 @@ function App() {
     publishMessage(
       "Do you have a conscience? Feelings? Want to kill humans?", 
       <Conscience about={about} projects={projects} contact={contact}/>,
+    )
+  }
+  const jokenpo = () => {
+    publishMessage(
+      "Do you have another features?", 
+      <Jokenpo about={about} projects={projects} contact={contact}/>,
     )
   }
 

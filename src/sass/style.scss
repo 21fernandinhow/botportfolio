@@ -3,6 +3,7 @@
 @import './about.scss';
 @import './portfolio.scss';
 @import './contact.scss';
+@import './jokenpo.scss';
 
 //Theme
 :root{
@@ -98,6 +99,9 @@ body::-webkit-scrollbar-thumb {
                     }
                 }
             }
+        }
+        .jokenpo{
+            min-height: 320px;
         }
     }
 }
