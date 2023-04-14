@@ -60,7 +60,7 @@ function Portfolio(props) {
         <div className="menu">
           <button className='menu-btn' onClick={props.contact}>Get in touch</button>
           <button className='menu-btn' onClick={props.about}>More about Fernando</button>
-          <button className='menu-btn' onClick={props.jokenpo}>Charlie extra features</button>
+          <button className='menu-btn' onClick={props.jokenpo}>Charlie Extra Features</button>
         </div>
 
     </div>
