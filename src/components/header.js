@@ -5,13 +5,16 @@ import '../images/avatar.webp';
 import '../images/github.webp';
 import '../images/linkedin.webp';
 
-function Header() {
+function Header(props) {
 
     return (
         <header className='header'>
             <img className='avatar' alt="avatar" src="../images/avatar.webp" width='100px' height='100px'/>
 
             <div className='icons'>
+
+
+                <span onClick={props.handleLanguage} className="btn-translate"> {props.translateIcon} </span>
 
                 <a href="https://github.com/21fernandinhow" target="_blank" rel="noopener noreferrer">
                     <img className='icon' alt="github" src="../images/github.webp" width='25px' height='25px'/>

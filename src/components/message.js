@@ -2,11 +2,20 @@ import React from "react";
 
 function Message (props) {
 
-    return (
-        <div className={`${props.who} message`}>
-            {props.content}
-        </div>
-    ) 
+    if (props.language==='pt-br'){
+        return (
+            <div className={`${props.who} message`}>
+                {props.portugueseContent}
+            </div>
+        ) 
+    } else {
+        return (
+            <div className={`${props.who} message`}>
+                {props.content}
+            </div>
+        ) 
+    }
+    
 }
 
 export default Message;

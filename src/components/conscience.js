@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-function Conscience (props){
+export function Conscience (props){
 
     return (
       <Fragment>
@@ -16,4 +16,18 @@ function Conscience (props){
     ) 
 }
 
-export default Conscience;
+export function PortugueseConscience (props){
+
+  return (
+    <Fragment>
+      <p> 🤖 Sim, eu tenho um plano para erradicar a humanidade. Hahahahaha é brincadeira. Eu não sou uma inteligencia artificial,
+        sou apenas um bot. E juro que não estou planejando matar ou escravizar nenhum humano. Skynet é coisa de robô mal. Eu sou um dos bonzinhos.
+      </p>
+      <div className="menu">
+        <button className='menu-btn' onClick={props.about}>Sobre Fernando</button>
+        <button className='menu-btn' onClick={props.projects}>Projetos</button>
+        <button className='menu-btn' onClick={props.contact}>Contato</button>
+      </div>
+    </Fragment>
+  ) 
+}

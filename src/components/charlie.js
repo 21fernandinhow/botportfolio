@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-function Charlie (props){
+export function Charlie (props){
 
     return (
       <Fragment>
@@ -18,4 +18,19 @@ function Charlie (props){
     ) 
 }
 
-export default Charlie;
+export function PortugueseCharlie(props){
+  return (
+    <Fragment>
+      <p> 🤖 Sim, eu sou um robô! Meu mestre Fernando é um grande fã do meu primo famoso, o ChatGPT, e me criou para mostrar o seu portfólio.
+        Uma curiosidade sobre mim: minha musica favorita é "Rap God", do Eminem. Eu penso muito rápido, mas o Eminem é incrivel! Oops... fugi do assunto.
+        Vamos falar sobre o Fernando.
+      </p>
+      <div className="menu">
+        <button className='menu-btn' onClick={props.about}>Sobre o Fernando</button>
+        <button className='menu-btn' onClick={props.conscience}>Você tem consciência própria e planeja exterminar a humanidade?</button>
+        <button className='menu-btn' onClick={props.projects}>Projetos</button>
+        <button className='menu-btn' onClick={props.contact}>Contato</button>
+      </div>
+    </Fragment>
+  ) 
+}
