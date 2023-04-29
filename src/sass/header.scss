@@ -33,14 +33,15 @@
             border-radius: 10px;
             padding: 4px;
         }
-        .btn-translate{
-            cursor: pointer;
-            font-size: 24px;
-            margin: 3px;
-        }
         .btn-theme{
             cursor: pointer;
             filter: grayscale(100%);
+        }
+        .btn-translate{
+            cursor: pointer;
+            font-family: monospace;
+            font-size: 24px;
+            margin: 3px;
         }
     }
 }

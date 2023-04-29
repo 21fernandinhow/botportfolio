@@ -13,9 +13,6 @@ function Header(props) {
 
             <div className='icons'>
 
-
-                <span onClick={props.handleLanguage} className="btn-translate"> {props.translateIcon} </span>
-
                 <a href="https://github.com/21fernandinhow" target="_blank" rel="noopener noreferrer">
                     <img className='icon' alt="github" src="../images/github.webp" width='25px' height='25px'/>
                 </a>
@@ -25,6 +22,8 @@ function Header(props) {
                 </a>
 
                 <img onClick={changeTheme} className='btn-theme' alt="change-theme" src="../images/changetheme.webp" width='90px' height='45px'/>
+
+                <span onClick={props.handleLanguage} className="btn-translate"> {props.translateIcon} </span>
 
             </div>
         </header>

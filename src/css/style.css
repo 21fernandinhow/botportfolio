@@ -30,14 +30,15 @@
   border-radius: 10px;
   padding: 4px;
 }
-.header .icons .btn-translate {
-  cursor: pointer;
-  font-size: 24px;
-  margin: 3px;
-}
 .header .icons .btn-theme {
   cursor: pointer;
   filter: grayscale(100%);
+}
+.header .icons .btn-translate {
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 24px;
+  margin: 3px;
 }
 
 @-webkit-keyframes AnimationName {

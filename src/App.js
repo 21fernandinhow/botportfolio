@@ -14,15 +14,15 @@ function App() {
 
   const [messages, setMessages] = useState([]);
   const [language, setLanguage] = useState('en');
-  const [translateIcon, setTranslateIcon] = useState('🇧🇷');
+  const [translateIcon, setTranslateIcon] = useState(' 🇧🇷 ');
 
   const handleLanguage = () => {
     if (language==='en'){
         setLanguage('pt-br');
-        setTranslateIcon('🇺🇲');
+        setTranslateIcon(' 🇺🇲 ');
     } else {
         setLanguage('en');
-        setTranslateIcon('🇧🇷');
+        setTranslateIcon(' 🇧🇷 ');
     };
   };
 

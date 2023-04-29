@@ -61,7 +61,7 @@ function Carousel (props) {
         <a href={projects[project].link} target="_blank" rel="noopener noreferrer">
           <img className="portfolio-img" alt="website" src={projects[project].image}/>
         </a>    
-        <p className="portfolio-name"> {project+1}/{projects.length + 1} - {showDescription} </p>
+        <p className="portfolio-name"> {project+1}/{projects.length} - {showDescription} </p>
       </div>
 
       <div className="arrow-div arrow2">
