@@ -9,6 +9,7 @@ import { Charlie, PortugueseCharlie } from './components/charlie';
 import { Conscience, PortugueseConscience } from './components/conscience';
 import { Jokenpo, PortugueseJokenpo } from './components/jokenpo';
 import './css/style.css';
+import Footer from './components/footer';
 
 function App() {
 
@@ -46,7 +47,7 @@ function App() {
     messages.push(userMessage, botMessage);
     setMessages([...messages]);
     setTimeout(()=>{
-      const scrollPoint = document.querySelector('#scroll-bottom');
+      const scrollPoint = document.querySelector('#footer');
       scrollPoint.scrollIntoView();
     })
   }
@@ -114,7 +115,7 @@ function App() {
         ))}
 
       </section>
-      <span id="scroll-bottom"></span>
+      <Footer language={language}/>
     </div>
   );
 }
