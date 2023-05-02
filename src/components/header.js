@@ -9,7 +9,7 @@ function Header(props) {
 
     return (
         <header className='header'>
-            <img className='avatar' alt="avatar" src="../images/avatar.webp" width='100px' height='100px'/>
+            <img className='avatar' alt="avatar" src="../images/avatar.webp" width='120px' height='120px'/>
 
             <div className='icons'>
 

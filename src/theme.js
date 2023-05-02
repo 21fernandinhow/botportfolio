@@ -10,11 +10,11 @@ function changeTheme(){
         root.style.setProperty("--secondary-color", "#b8b5ff");
         body.dataset.theme = "light"
       } else {
-        root.style.setProperty("--bg-color", "#18122b"); // alternative color #022E37
-        root.style.setProperty("--bg-radical-color", "#000015"); // alternative color #01212D
+        root.style.setProperty("--bg-color", "#242424"); 
+        root.style.setProperty("--bg-radical-color", "#1a1a1a"); 
         root.style.setProperty("--contrast-color", "#f5f5f5"); 
-        root.style.setProperty("--primary-color", "#635985"); // alternative color #309F89
-        root.style.setProperty("--secondary-color", "#393053"); // alternative-color #075F56
+        root.style.setProperty("--primary-color", "#309F89"); // alternative color #7868e6
+        root.style.setProperty("--secondary-color", "#508B7A"); //alternative color #0e0e0e
         body.dataset.theme = "dark"
       }
 }
