@@ -74,14 +74,14 @@
   font-size: 14px;
   border-radius: 7px;
   padding: 5px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   font-weight: bolder;
   color: var(--contrast-color);
   margin-right: 2px;
   margin-top: 0px;
 }
 .skills p:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   transition: 0.2s;
 }
 
@@ -124,6 +124,7 @@
   margin-left: 10px;
   max-width: 470px;
   border-radius: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
   opacity: 0.9;
 }
 .portfolio .carrousel .portfolio-div .portfolio-img:hover {
@@ -254,14 +255,15 @@ body::-webkit-scrollbar-thumb {
   font-size: 14px;
   text-decoration: none;
   font-weight: bold;
-  color: var(--contrast-color);
-  background-color: var(--secondary-color);
-  border: none;
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--primary-color);
   border-radius: 30px;
   margin: 3px;
 }
 .menu-btn:hover {
   background-color: var(--primary-color);
+  color: #f5f5f5;
   transition: 0.8s;
 }
 
