@@ -84,12 +84,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #footer{
-    position: sticky;
-    bottom: 0px;
     text-align: center;
     padding: 15px;
     background-color: var(--bg-color);
-    border-top: 2px solid var(--secondary-color);
     a{
         color: var(--primary-color);
         margin-left: 10px;
