@@ -1,10 +1,7 @@
 .header{
-    z-index: 99;
     padding: 10px;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
     color: var(--contrast-color);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
     @extend .flex-central;
