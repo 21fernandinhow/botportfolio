@@ -20,6 +20,7 @@ export function About (props){
                 <p>Bootstrap</p>
                 <p>HTML</p>
                 <p>Git / Github</p>
+                <p>Figma</p>
             </div>
 
             <div className="menu">
